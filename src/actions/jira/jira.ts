@@ -48,6 +48,9 @@ export class JiraAction extends Hub.Action {
         project: {
           id: request.formParams.project,
         },
+	customfield_10309 : {
+	  name: "SRVPSSAPRAPPLICATI01",
+	},
         summary: request.formParams.summary,
         description: `${request.formParams.description}` +
           `\nLooker URL: ${request.scheduledPlan && request.scheduledPlan.url}`,
